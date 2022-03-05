@@ -17,9 +17,9 @@
     <header>
         <nav>
             <ul>
-                <li class="current_page_item"><a href="index.html">Menu</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li class="current_page_item"><a href="/testewpp/">Menu</a></li>
+                <li><a href="/testewpp/sobre/">Sobre</a></li>
+                <li><a href="/testewpp/contato/">Contato</a></li>
             </ul>
         </nav>
 
