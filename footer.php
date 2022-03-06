@@ -1,7 +1,7 @@
 <footer>
     <nav class="nav-footer">
         <ul>
-            <li class="current_page_item"><a href="/testewpp/">Menu</a></li>
+            <li class="current_page_item"><a href="/">Menu</a></li>
             <li><a href="/testewpp/sobre/">Sobre</a></li>
             <li><a href="/testewpp/contato/">Contato</a></li>
         </ul>
