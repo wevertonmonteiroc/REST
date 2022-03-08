@@ -7,25 +7,28 @@
 
         <link href='https://fonts.googleapis.com/css?family=Alegreya+SC' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css">
+
         <!-- Header Wordpress -->
         <?php wp_head(); ?>
         <!-- Fecha Header Wordpress -->
     </head>
-
+    <?php $sobre = get_page_by_title('sobre'); ?>
     <body>
 
         <header>
             <nav>
-                <ul>
-                    <li class="current_page_item"><a href="/">Menu</a></li>
-                    <li><a href="/testewpp/sobre/">Sobre</a></li>
-                    <li><a href="/testewpp/contato/">Contato</a></li>
-                </ul>
+                <?php
+                $args = array(
+                    'menu' => 'principal',
+                    'container' => false
+                );
+                wp_nav_menu( $args );
+                ?>
             </nav>
 
-            <h1><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rest.png" alt="Rest"></h1>
+                <h1><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/rest.png" alt="Rest"></h1>
 
-            <?php $contato = get_page_by_title('contato'); ?>
-            <p><?php the_field('endereco_header', $contato); ?></p>
-            <p class="telefone"><?php the_field('telefone_header', $contato); ?></p>
+                <?php $contato = get_page_by_title('contato'); ?>
+                <p><?php the_field('endereco_header', $contato); ?></p>
+                <p class="telefone"><?php the_field('telefone_header', $contato); ?></p>
         </header>
