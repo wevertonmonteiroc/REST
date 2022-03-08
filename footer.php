@@ -6,8 +6,8 @@
             <li><a href="/testewpp/contato/">Contato</a></li>
         </ul>
     </nav>
-
-    <p>Rest © 2015. Alguns direitos reservados.</p>
+    <!-- A função echo date("Y") serve para mostrar o ano atual-->
+    <p><?php bloginfo('name') ?> © <?php echo date("Y"); ?>. Alguns direitos reservados.</p>
 </footer>
 
 <!-- Footer Wordpress -->
